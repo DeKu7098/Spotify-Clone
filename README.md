@@ -21,6 +21,7 @@
   - Proper Designed component required only for Discover element
   - For All other Sidenav elements i.e. Search, Favourites, Playlist and Charts just show the Sidenav element name in the corresponding component.
 - Loading state/UI *(optional, current UX is already clean)*
+- Deploy on Heroku or Netlify
 
 &nbsp;
 # Think about 💡
