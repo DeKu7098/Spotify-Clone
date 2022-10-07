@@ -8,7 +8,6 @@
 &nbsp;
 # Pre-requisites ✅
 - Add your Spotify client ID & secret to a `.env` file in root using the environment variables `REACT_APP_SPOTIFY_CLIENT_ID` and `REACT_APP_SPOTIFY_CLIENT_SECRET`
-  - Note. **Never add this type of config to version control. This would usually come from your build server.**
 
 &nbsp;
 # Requirements 📖
@@ -18,6 +17,9 @@
   - Use the API path `featured-playlists`
 - Fetch and display *Browse* genres
   - Use the API path `categories`
+- Add React Router and implement router for Sidenav
+  - Proper components required only for Discover
+  - For All other Sidenav elements just show the Sidenac element name in the corresponding component.
 - Loading state/UI *(optional, current UX is already clean)*
 
 &nbsp;
