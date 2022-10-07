@@ -18,8 +18,8 @@
 - Fetch and display *Browse* genres
   - Use the API path `categories`
 - Add React Router and implement router for Sidenav
-  - Proper components required only for Discover
-  - For All other Sidenav elements just show the Sidenav element name in the corresponding component.
+  - Proper Designed component required only for Discover element
+  - For All other Sidenav elements i.e. Search, Favourites, Playlist and Charts just show the Sidenav element name in the corresponding component.
 - Loading state/UI *(optional, current UX is already clean)*
 
 &nbsp;
