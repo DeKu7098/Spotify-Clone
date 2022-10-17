@@ -9,14 +9,20 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { ReactComponent as Avatar } from '../../../assets/images/avatar.svg';
 import './_sidebar.scss';
+import { Link } from 'react-router-dom';
 
 function renderSideBarOption(link, icon, text, { selected } = {}) {
+  
+  console.log('link',link);
   return (
-    <div
+    <div 
       className={cx('sidebar__option', { 'sidebar__option--selected': selected })}
     >
+      <Link to={link}>
+        
       <FontAwesomeIcon icon={icon} />
       <p>{text}</p>
+      </Link>
     </div>
   )
 }
@@ -29,7 +35,7 @@ export default function SideBar() {
         <p>Bob Smith</p>
       </div>
       <div className="sidebar__options">
-        {renderSideBarOption('/', faHeadphonesAlt, 'Discover', { selected: true })}
+        {renderSideBarOption('/', faHeadphonesAlt, 'Discover')}
         {renderSideBarOption('/search', faSearch, 'Search')}
         {renderSideBarOption('/favourites', faHeart, 'Favourites')}
         {renderSideBarOption('/playlists', faPlayCircle, 'Playlists')}
